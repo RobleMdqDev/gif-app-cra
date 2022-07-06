@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { FirstComponent } from "./components/FirstComponent";
 
 function App() {
+  const arr = ["Primer", "Segundo", "Tercer"];
+
+  const [texto, setTexto] = useState(0);
+
+  const handleClick = (event) => {
+    setTexto(Math.floor(Math.random() * 3));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FirstComponent text={arr[texto]} />
+
+      <button value={"Pepe"} onClick={handleClick}>
+        Click!!!
+      </button>
+    </>
   );
 }
 
