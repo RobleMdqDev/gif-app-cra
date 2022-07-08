@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gif-app-cra/static/css/main.fad49978.css",
+    "main.js": "/gif-app-cra/static/js/main.2023142e.js",
+    "index.html": "/gif-app-cra/index.html",
+    "main.fad49978.css.map": "/gif-app-cra/static/css/main.fad49978.css.map",
+    "main.2023142e.js.map": "/gif-app-cra/static/js/main.2023142e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fad49978.css",
+    "static/js/main.2023142e.js"
+  ]
+}
