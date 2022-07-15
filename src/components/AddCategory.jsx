@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export const AddCategory = ({ addCategory }) => {
 
-    const [inputValue, setInputValue] = useState(' ');
+    const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = ({ target })=>{
         setInputValue(target.value);        
@@ -18,7 +18,7 @@ export const AddCategory = ({ addCategory }) => {
     }
 
   return (
-    <form onSubmit={handleSubmit} >
+    <form onSubmit={handleSubmit} aria-label='form'>
         <input 
             type='text'
             placeholder='Buscar Gif'
